@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="#ffffff"
+    tools:context=".fragment.Add">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/layout">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Photo"
+            android:textColor="#000000"
+            android:textStyle="italic"
+            android:background="#A55738"
+            android:minWidth="110dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageViewBtn"
+            android:visibility="visible"
+            />
+
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/baseline_arrow_forward_24"
+            android:id="@+id/nextBtn"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/productNameFA"
+                android:hint="Product Name"
+                android:padding="16dp"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/priceFA"
+                android:hint="Price"
+                android:inputType="numberDecimal"
+                android:padding="16dp"
+                android:layout_below="@id/productNameFA"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/descriptionFA"
+                android:textColor="#000000"
+                android:hint="Add your post"
+                android:minLines="12"
+                android:layout_below="@id/priceFA"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/imageView"
+                android:visibility="gone"
+                android:contentDescription="@null"
+                android:layout_below="@+id/descriptionFA"
+                android:background="#353030"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:id="@+id/recyclerView"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

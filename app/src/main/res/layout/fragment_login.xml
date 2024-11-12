@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.CreatAcauntFragment"
+    android:background="@drawable/img">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="150sp"
+        android:text="@string/hopol"
+        android:layout_marginStart="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:id="@+id/Linerlayout2"
+        >
+        <EditText
+            android:id="@+id/emailFCA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@drawable/text_box"
+            android:layout_marginStart="10dp"
+            android:hint="@string/email"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/passwordFCA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/text_box"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/forgotpaassFL"/>
+
+
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:id="@+id/progressBar1"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/loginButton"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/Linerlayout2"
+        android:visibility="gone"
+
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@drawable/button_box"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/loginButton"
+        android:layout_above="@+id/googleSignIButton"
+        android:layout_marginBottom="15dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_with_google"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@drawable/button_box"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/googleSignIButton"
+        android:layout_above="@+id/signIngo"
+        android:layout_marginBottom="15dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/signIngo"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="26dp"
+        android:text="@string/sign_up"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+
+
+
+
+
+
+
+</RelativeLayout>

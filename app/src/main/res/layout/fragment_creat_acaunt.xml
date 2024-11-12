@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.CreatAcauntFragment"
+    android:background="@drawable/img">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:text="Create \nAccount"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        />
+    <LinearLayout
+        android:id="@+id/Linerlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+        <EditText
+            android:id="@+id/nameFCA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/text_box"
+            android:hint="Name"
+            android:textStyle="bold"
+            android:textColor="@color/dark"/>
+
+        <EditText
+            android:id="@+id/emailFCA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@drawable/text_box"
+            android:layout_marginStart="10dp"
+        android:hint="Email"
+            android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/passwordFCA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/text_box"
+            android:hint="Password"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/confirmPasswordFCA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:background="@drawable/text_box"
+            android:inputType="textPassword"
+            android:hint="ConfirmPassword"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:id="@+id/progressBar1"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/singInButtonFCA"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/Linerlayout1"
+        android:visibility="gone"
+
+
+        />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@drawable/button_box"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/singInButtonFCA"
+        android:layout_above="@+id/loginBackFCA"
+        android:layout_marginBottom="15dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/loginBackFCA"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="26dp"
+        android:text="Back"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

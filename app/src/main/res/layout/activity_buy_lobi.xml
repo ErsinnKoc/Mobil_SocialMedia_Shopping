@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyLobi">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:text="BUY YOUR \nPRODUCT"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/Linerlayout1"
+        android:layout_width="396dp"
+        android:layout_height="431dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="On The Card Name"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"/>
+
+
+        <EditText
+            android:id="@+id/cardName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/text_box"
+            android:hint="Er*** K**"
+            android:padding="12dp"
+            android:textColor="@color/dark"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card Number"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"/>
+
+
+        <EditText
+            android:id="@+id/CardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/text_box"
+            android:hint="4563 **** **** **24"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expiry"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/LastTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/text_box"
+            android:hint="**/**"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CVC"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/Cvv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/text_box"
+            android:hint="***"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:id="@+id/progressBar1"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/buyProduct"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/Linerlayout1"
+        android:visibility="gone"
+
+
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buyProduct"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/totalPriceTextView"
+        android:text="@string/price_suffix"
+        ></TextView>
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BUY"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@drawable/button_box"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textSize="20dp"
+        android:id="@+id/buyProduct"
+        android:layout_above="@+id/backCart"
+        android:layout_marginBottom="15dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/backCart"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="26dp"
+        android:text="Back"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Hopol" parent="Theme.AppCompat.Light.NoActionBar">
+     <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/thistel</item>
+    </style>
+
+    <style name="Theme.Hopol" parent="Base.Theme.Hopol" />
+</resources>
